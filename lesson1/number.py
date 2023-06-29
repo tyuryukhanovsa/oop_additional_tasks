@@ -15,21 +15,21 @@
 class Number:
 
     def __init__(self, value):
-        ...
+        self.value = value
 
-    def ...(self):
-        ...
+    def get(self):
+        return self.value
 
-    def ...:
-        ...
+    def add(self, num_1):
+        self.value += num_1
 
-    def ...:
-        ...
+    def substract(self, num_2):
+        self.value -= num_2
 
 
 n = Number(7)
 print(n.get())  # 7
 n.add(3)
 print(n.get())  # 10
-n.subtract(5)
+n.substract(5)
 print(n.get())  # 5
